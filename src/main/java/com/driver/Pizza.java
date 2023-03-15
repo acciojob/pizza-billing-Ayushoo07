@@ -73,36 +73,36 @@ public class Pizza {
 
         if(this.isVeg)
         {
-            this.bill="Base Price Of The Pizza:" +300;
+            this.bill="Base Price Of The Pizza: " +300;
         }
         else
         {
-            this.bill="Base Price Of The Pizza:" +400;
+            this.bill="Base Price Of The Pizza: " +400;
         }
 
         if(this.extraCheese)
         {
-            this.bill=this.bill+ "\n" +"Extra Cheese Added:"+80;
+            this.bill=this.bill+ "\n" +"Extra Cheese Added: "+80;
         }
 
         if(this.extraToppings)
         {
             if(this.isVeg)
             {
-                this.bill=this.bill+"\n" +"Extra Toppings Added:"+70;
+                this.bill=this.bill+"\n" +"Extra Toppings Added: "+70;
             }
             else
             {
-                this.bill=this.bill+"\n" +"Extra Toppings Added:"+120;
+                this.bill=this.bill+"\n" +"Extra Toppings Added: "+120;
             }
         }
 
         if(takeaway)
         {
-            this.bill=this.bill+'\n'+"Paperbag Added:"+20;
+            this.bill=this.bill+'\n'+"Paperbag Added: "+20;
         }
 
-        this.bill=this.bill+"\n"+"Total Price:"+this.price;
+        this.bill=this.bill+"\n"+"Total Price: "+this.price+"\n";
 
         // your code goes here
         return this.bill;
